@@ -1,0 +1,72 @@
+@use '../variables/ـcolors' as *;
+
+@use './_btn' as *;
+
+@use './_tagline' as *;
+
+
+.home-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 80vh;
+    gap: 37px;
+    margin-top: -40px;
+}
+
+
+.home-banner h1{
+    font-size: 60px;
+    color: $heading-color;
+}
+  
+  .ai-box {
+    position: relative;
+    width: 500px;
+    max-width: 90vw;
+  }
+  
+  .ai-box input {
+    width: 100%;
+    padding: 12px 140px 12px 20px;
+    border-radius: 50px;
+    border: 1px solid $border;
+    background-color: $secondary-color;
+    box-sizing: border-box;
+    font-size: 14px;
+    transition: border 0.2s ease, box-shadow 0.2s ease;
+  
+    &:focus {
+      box-shadow: 0 0 5px $dark-blue;
+      outline: none;
+      color: $heading-color;
+    }
+  }
+  
+  .ai-box .btn3 {
+    position: absolute;
+    right: -20px;
+    top: 25%;
+    transform: translateY(-50%);
+    padding: 8px 15px;
+    border: none;
+    border-radius: 50px;
+    font-family: "Parkinsans", sans-serif;
+    font-size: 23px;
+    font-weight: 700;
+    color: $secondary-color;
+    background-color: $main-color;
+    cursor: pointer;
+    box-shadow: 0 0 2rem 0.2rem $main-dark;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    &:hover {
+      background-color: $main-light;
+    }
+  }
+  

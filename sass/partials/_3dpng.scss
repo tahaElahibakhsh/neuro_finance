@@ -1,0 +1,42 @@
+.banner-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 350px;
+  }
+  
+  .banner-img1,
+  .banner-img2 {
+    width: 180px;
+    height: auto;
+    margin-top: -200px;
+  }
+  
+
+  .banner-img3 {
+    width: 300px;
+    height: auto;
+    animation: slow-rotate 50s linear infinite;
+    margin-top: 80px;
+  }
+  
+  
+  @keyframes float {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-40px); }
+    100% { transform: translateY(0); }
+  }
+  
+  .banner-img1 {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .banner-img2 {
+    animation: float 6s ease-in-out infinite reverse;
+  }
+
+  @keyframes slow-rotate {
+    0%   { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  

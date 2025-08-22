@@ -135,6 +135,130 @@
   width: 12px;
 }
 
+.tagline {
+  display: flex;
+  justify-content: center;
+  color: #FFCC66;
+  padding: 5px 2dvb;
+  margin: 8px;
+  font-family: "Parkinsans", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  border: 0.1px solid #FFE6B8;
+  border-radius: 50px;
+  background-color: transparent;
+}
+
+.home-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 80vh;
+  gap: 37px;
+  margin-top: -40px;
+}
+
+.home-banner h1 {
+  font-size: 60px;
+  color: #FFFFFF;
+}
+
+.ai-box {
+  position: relative;
+  width: 500px;
+  max-width: 90vw;
+}
+
+.ai-box input {
+  width: 100%;
+  padding: 12px 140px 12px 20px;
+  border-radius: 50px;
+  border: 1px solid #363636;
+  background-color: #191A1B;
+  box-sizing: border-box;
+  font-size: 14px;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+.ai-box input:focus {
+  box-shadow: 0 0 5px #0E104B;
+  outline: none;
+  color: #FFFFFF;
+}
+
+.ai-box .btn3 {
+  position: absolute;
+  right: -20px;
+  top: 25%;
+  transform: translateY(-50%);
+  padding: 8px 15px;
+  border: none;
+  border-radius: 50px;
+  font-family: "Parkinsans", sans-serif;
+  font-size: 23px;
+  font-weight: 700;
+  color: #191A1B;
+  background-color: #FFCC66;
+  cursor: pointer;
+  box-shadow: 0 0 2rem 0.2rem #D9AD52;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ai-box .btn3:hover {
+  background-color: #FFE6B8;
+}
+
+.banner-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 350px;
+}
+
+.banner-img1,
+.banner-img2 {
+  width: 180px;
+  height: auto;
+  margin-top: -200px;
+}
+
+.banner-img3 {
+  width: 300px;
+  height: auto;
+  animation: slow-rotate 50s linear infinite;
+  margin-top: 80px;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.banner-img1 {
+  animation: float 6s ease-in-out infinite;
+}
+
+.banner-img2 {
+  animation: float 6s ease-in-out infinite reverse;
+}
+
+@keyframes slow-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 /* ---------- reset style ---------- */
 * {
   margin: 0;
@@ -153,10 +277,9 @@ a {
 
 body {
   font-family: "Parkinsans", sans-serif;
-  font-size: 10px;
+  font-size: 14px;
   font-weight: 600;
-  background-color: #151515;
-  background: url("assets/img/banner/hero_bg.svg") no-repeat center top;
+  background: #151515 url("assets/img/banner/hero_bg.svg") no-repeat center top;
   background-size: cover;
   color: #888888;
 }

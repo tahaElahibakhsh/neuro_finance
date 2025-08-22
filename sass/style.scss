@@ -5,6 +5,10 @@
 
 @use './partials/_main_header' as *;
 
+@use './partials/_banner' as *;
+
+@use './partials/_3dpng' as *;
+
 
 
 /* ---------- reset style ---------- */
@@ -23,14 +27,13 @@ a{
     color: $heading-color;
 }
 
-body{
-    font-family: "Parkinsans", sans-serif;
-    font-size: 10px;
-    font-weight: 600;
-    background-color: $dark-bg;
-    background: url("assets/img/banner/hero_bg.svg") no-repeat center top;
-    background-size: cover;
-    color: $body-color;
+body {
+  font-family: "Parkinsans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  background: $dark-bg url("assets/img/banner/hero_bg.svg") no-repeat center top;
+  background-size: cover;
+  color: $body-color;
 }
 
 .global-bg {
