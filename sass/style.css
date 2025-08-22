@@ -14,27 +14,170 @@
   --main-dark: #D9AD52;
 }
 
-html {
-  font-size: 20px;
+/* ---------- header style ---------- */
+.btn1 {
+  display: flex;
+  justify-content: center;
+  color: #191A1B;
+  background-color: #FFCC66;
+  padding: 15px;
+  margin: 8px;
+  font-family: "Parkinsans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 50px;
+  transition: all 0.2s;
+  cursor: pointer;
 }
-@media (max-width: 640px) {
-  html {
-    font-size: 18px;
-  }
+.btn1:hover {
+  background-color: #FFE6B8;
 }
-@media (max-width: 540px) {
-  html {
-    font-size: 16px;
-  }
+
+.btn2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  padding: 10px;
+  margin: 10px;
+  font-family: "Parkinsans", sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  border: 1.5px solid #363636;
+  border-radius: 50px;
+  background-color: transparent;
+  transition: all 0.2s ease;
+  cursor: pointer;
 }
-@media (max-width: 400px) {
-  html {
-    font-size: 14px;
-  }
+.btn2:hover {
+  background-color: #FFCC66;
+  color: #191A1B;
+}
+
+.btn3 {
+  display: flex;
+  justify-content: center;
+  color: #191A1B;
+  background-color: #FFCC66;
+  padding: 10px 30px;
+  margin: 10px;
+  font-family: "Parkinsans", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  border-radius: 50px;
+  transition: all 0.2s;
+  cursor: pointer;
+  box-shadow: 0 0 2rem 0.2rem #D9AD52;
+}
+.btn3:hover {
+  background-color: #FFE6B8;
+}
+
+/* ---------- header style ---------- */
+.main-header {
+  background-color: #191A1B;
+  color: #FFFFFF;
+  border-radius: 50px;
+  position: relative;
+  z-index: 10;
+}
+
+.main-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px auto;
+}
+
+.main-header nav {
+  display: flex;
+  align-items: center;
+  gap: 130px;
+}
+
+.main-header h1 img {
+  height: 50px;
+  width: auto;
+  margin: 10px 30px;
+}
+
+.main-header ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  gap: 50px;
+}
+
+.main-header ul a {
+  position: relative;
+  font-size: 14px;
+  font-weight: 700;
+  transition: color 0.3s ease;
+  padding: 15px 2px;
+}
+.main-header ul a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 1.5px;
+  background-color: #FFCC66;
+  transition: width 0.2s ease;
+}
+.main-header ul a:hover {
+  color: #FFCC66;
+}
+.main-header ul a:hover::after {
+  width: 12px;
+}
+
+/* ---------- reset style ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ol, ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #FFFFFF;
 }
 
 body {
   font-family: "Parkinsans", sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  background-color: #151515;
+  background: url("assets/img/banner/hero_bg.svg") no-repeat center top;
+  background-size: cover;
+  color: #888888;
+}
+
+.global-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* ---------- container style ---------- */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.container-wide {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

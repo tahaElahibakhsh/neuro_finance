@@ -1,0 +1,70 @@
+@use '../variables/ـcolors' as *;
+@use '../fonts/ـfont' as *;
+
+.btn1{
+    display: flex;
+    justify-content: center;
+    color:  $secondary-color;
+    background-color: $main-color;
+    padding: 15px;
+    margin: 8px;
+    font-family: "Parkinsans", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    transition: all .2s;
+    cursor: pointer;
+
+    &:hover{
+    background-color: $main-light;
+    }
+
+}
+
+
+
+.btn2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $heading-color;
+    padding: 10px;
+    margin: 10px;
+    font-family: "Parkinsans", sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    border: 1.5px solid $border;
+    border-radius: 50px;
+    background-color: transparent; // پس‌زمینه شفاف
+    transition: all .2s ease;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $main-color;   // روی هاور رنگ بگیره
+        color: $secondary-color;
+    }
+}
+
+
+.btn3{
+    display: flex;
+    justify-content: center;
+    color:  $secondary-color;
+    background-color: $main-color;
+    padding: 10px 30px;
+    margin: 10px;
+    font-family: "Parkinsans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    border: none;
+    border-radius: 50px;
+    transition: all .2s;
+    cursor: pointer;
+    box-shadow: 0 0 2rem .2rem $main-dark;
+
+    &:hover{
+    background-color: $main-light;
+    }
+
+}
