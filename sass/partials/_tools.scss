@@ -1,0 +1,51 @@
+@use '../variables/ـcolors' as *;
+
+@use './_btn' as *;
+
+@use './_tagline' as *;
+
+.home-tools {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+  margin-top: 100px;
+}
+
+.tool-card {
+  background-color: $secondary-color;
+  color: $main-color;
+  border-radius: 20px;
+  padding: 40px 20px;
+  text-align: center;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(0,0,0,0.15);
+  border: .5px solid $border;
+}
+
+.tool-card .icon-wrapper {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background-color: $main-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: $secondary-color;
+  transition: all 0.4s ease;
+}
+
+.tool-card:hover {
+  background-color: $main-color;
+  color: $secondary-color;
+  border: .5px solid $main-dark;       
+
+}
+
+.tool-card:hover .icon-wrapper {
+  background-color: $secondary-color;
+  color: $main-color;
+  transform: scale(1.2);
+}
