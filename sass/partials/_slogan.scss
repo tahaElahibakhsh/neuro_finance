@@ -1,0 +1,30 @@
+@use '../variables/ـcolors' as *;
+
+@use './_btn' as *;
+
+@use './_tagline' as *;
+
+.home-slogan {
+    width: 100%;
+    overflow: hidden;
+    background-color: transparent;
+    padding: 60px 0;
+  }
+  
+  .slogan-text {
+    display: inline-block;
+    font-family: "Parkinsans", sans-serif;
+    font-size: 90px;
+    font-weight: 700;
+    color: $body-color;
+    white-space: nowrap;
+    
+    animation: marquee 40s linear infinite alternate;
+  }
+  
+  @keyframes marquee {
+    0%   { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+  
+  

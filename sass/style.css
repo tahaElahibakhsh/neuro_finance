@@ -309,6 +309,31 @@
   transform: scale(1.2);
 }
 
+.home-slogan {
+  width: 100%;
+  overflow: hidden;
+  background-color: transparent;
+  padding: 60px 0;
+}
+
+.slogan-text {
+  display: inline-block;
+  font-family: "Parkinsans", sans-serif;
+  font-size: 90px;
+  font-weight: 700;
+  color: #888888;
+  white-space: nowrap;
+  animation: marquee 40s linear infinite alternate;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 /* ---------- reset style ---------- */
 * {
   margin: 0;
